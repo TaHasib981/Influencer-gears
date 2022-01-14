@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;400;500;600;700;800;900&family=Island+Moments&family=Luxurious+Roman&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,300;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;400;500;600;700;800;900&family=Island+Moments&family=Luxurious+Roman&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,300;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,700;1,800&display=swap');
 body{
     font-family: 'Montserrat', sans-serif;
     background-color:whitesmoke;
@@ -6,7 +6,7 @@ body{
 
 /* header section  */
 header{border: 1px solid black;
-    height: 100vh;
+    height: 90vh;
     width: 1000px;
     margin: auto;
 }
@@ -61,5 +61,53 @@ nav{
     width: 100%;
     margin-left: 10px;
 }
+/* popular-container  */
+.popular-container{
+   width: 1000px;
+   margin: auto;
+}
+.popular-title{
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 900px;
+}
+.collections{
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 35px;
+}
+.collection{
+    background-color:white;
+    border: 1px solid red;
+    padding:20px;
+    border-radius: 8px;
+}
+.collection img{
+    width: 100%;
+}
 
-    
+.price{
+    font-size: 25px;
+}
+.star{
+    color: #FB8200;
+}
+.unstar{
+    color: lightgray;
+}
+.see-more{
+    margin-top: 15px;
+    margin-right: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    color: rgb(243, 85, 109);
+}
+.see-more i{
+    color: rgb(250, 96, 119);
+    font-size: 12px;
+}
